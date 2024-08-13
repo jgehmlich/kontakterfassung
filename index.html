@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TailwindCSS</title>
+    <title>Kontakterfassung</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello Vite + TailwindCSS!</h1>
+  <body class="flex items-center justify-center min-h-screen">
+    <div class="space-y-4 bg-white p-6 rounded-lg shadow-lg">
+      <h1 class="text-3xl font-bold">Kontakterfassung</h1>
+
+      <form
+        action="mailto:ansprechpartner@kontakterfassung.de?subject=Kontakterfassung"
+        method="post"
+        enctype="text/plain"
+        class="space-y-4"
+      >
+        <p class="w-72">
+          Zu einer weniger für Fehler anfälligen Erfassung der Kontaktdaten
+          könne man ein solches Formular nutzen. In diesem Beispiel werden
+          werden keine Daten im Browser oder auf Servern gespeichert. Die Daten
+          werden lediglich per E-Mail an einen Verantwortlichen zur nahtlosen
+          Erstanmeldung erfasst.
+        </p>
+        <div class="flex flex-col">
+          <label for="vorname" class="mb-1 text-sm font-semibold"
+            >Vorname:</label
+          >
+          <input
+            type="text"
+            id="vorname"
+            name="Vorname"
+            class="px-3 py-2 border rounded-lg"
+            required
+          />
+        </div>
+        <div class="flex flex-col">
+          <label for="nachname" class="mb-1 text-sm font-semibold"
+            >Nachname:</label
+          >
+          <input
+            type="text"
+            id="nachname"
+            name="Nachname"
+            class="px-3 py-2 border rounded-lg"
+            required
+          />
+        </div>
+        <div class="flex flex-col">
+          <label for="mail" class="mb-1 text-sm font-semibold">E-Mail:</label>
+          <input
+            type="email"
+            id="mail"
+            name="E-Mail"
+            class="px-3 py-2 border rounded-lg"
+            required
+          />
+        </div>
+        <div class="flex flex-col">
+          <label for="telefon" class="mb-1 text-sm font-semibold"
+            >Telefon:</label
+          >
+          <input
+            type="tel"
+            id="telefon"
+            name="Telefon"
+            class="px-3 py-2 border rounded-lg"
+          />
+        </div>
+        <div class="flex justify-center">
+          <button
+            type="submit"
+            class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+          >
+            Senden
+          </button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

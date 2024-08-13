@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Benutzerdefinierte Schriftarten */
+.cabin-sketch-regular {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cabin-sketch-bold {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-color: #dab67b !important;
+  background-image: url(/background.png);
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  color: #383838;
+}
+
+h1 {
+  font-family: "Cabin Sketch", sans-serif;
+  color: #aa201b;
+}
